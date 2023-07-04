@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Numerology</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand"><img src="./image/icon.png" width="60px"></a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link" href="#numerology">Numerology</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#encryption">Encryption</a></li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit"><i class="bi bi-search"></i></button>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <!--Backround image-->
+        <div class="bg-image image_background-1">
+            <div class="container" id="numerology">
+                <div class="row justify-content-center pt-5">
+                    <div class="col-md-6">
+                        <h3 class="text-center text-dark fw-bold">Numerology</h3>
+                        <div class="input-group">
+                            <input class="form-control" id="id_numerology_value">
+                            <button class="btn btn-dark" onclick="search()"><i class="bi bi-arrow-left-right"></i> convert</button>
+                        </div>
+                        <p class="text-danger" id="eroor_numerology"></p>
+                        <p class="text-center text-dark display-3 mt-2 fw-bold" id="id_output_numerology"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-image image_background-2">
+            <div class="container" id="encryption">
+                <div class="row justify-content-center pt-5">
+                    <div class="col-md-6">                
+                        <div class="mb-3">
+                            <textarea placeholder="Enter text to encrypt..." class="form-control" id="id_encryption_value"></textarea>
+                        </div>
+                            
+                        <div class="input-group">
+                            <select class="form-select" id="id_select">
+                                <option disabled selected>-- אופציות --</option>
+                                <option value="encryption">Encryption</option>
+                                <option value="decoding">Decoding</option>
+                            </select>
+                            <input class="form-control" placeholder="Encryption key" type="number" min="0" max="100" id="id_encryption_key">
+                        </div>    
+                        <button class="btn btn-primary mt-2" onclick="encode()">encode</button>
+                    </div>
+                </div>
+                <p class="display-3 text-center text-light" id="id_output_encryption"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="text-center bg-black text-light p-3">Developed by ES | contact - <a class="text-light link-offset-2 link-offset-3-hover link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:Elisi@gamil.com">Elisi@gamil.com</a></p>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

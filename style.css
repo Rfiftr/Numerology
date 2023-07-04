@@ -1,0 +1,16 @@
+.image_background-1 {
+    background-image: url(./image/bg.jpg);
+    height: 750px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.image_background-2 {
+    background-image: url(./image/bhg.jpg);
+    height: 750px;
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+
